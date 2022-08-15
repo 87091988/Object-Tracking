@@ -1,6 +1,11 @@
 import cv2
 import numpy as np
-from skimage.measure import compare_ssim as ssim
+# from skimage.measure import compare_ssim as ssim
+# from skimage import measure
+from skimage.metrics import structural_similarity as ssim
+#from skimage.measure import structural_similarity as ssim
+
+#s = ssim(imageA, imageB)
 
 def detect(im1,im2):
 	im3=im1.copy()
